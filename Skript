@@ -1,0 +1,43 @@
+Herzlich Willkommen zum Video über Ebenenbeziehungen! In diesem Video wirst du lernen,
+
+Welche Beziehungen Ebenen zueinander haben können
+Wie du erkennst, welcher Fall vorliegt
+und wir werden ein Beispiel zu parallelen Ebenen durchrechnen
+
+Fangen wir also direkt an: Hier habe ich eine Animation zu parallelen Ebenen gemacht.
+
+Wie wir sehen, scheinen die beiden Ebenen parallel zueinander. Um jetzt den Abstand zu bestimmen, stellen wir eine Gerade auf, die durch beide Ebenen geht. Dadurch können wir den Punkt bestimmen, in dem die Gerade die zweite Ebene schneidet und damit den Abstand berechnen.
+
+Woher wissen wir aber, ob die Ebenen wirklich parallel sind? In einer Klausur dürfen wir solche Informationen nicht einfach einer Grafik entnehmen, sondern müssen rechnen.
+
+Rechnen wir also das Beispiel aus der Animation:
+
+Die Ebenengleichungen sind hier gegeben, manchmal kann es aber sein, dass du diese aus gegebenen Punkten bestimmen musst.
+
+Zuallererst bestimmen wir die Normalvektoren, da wir die Ebenen in die Koordinatenform bringen wollen.
+
+Es fällt direkt auf: Die Normalvektoren sind kollinear! Das bedeutet, dass die beiden Ebenen entweder parallel oder identisch sind. Hier haben wir also schon bewiesen, dass eines der beiden der Fall sein muss.
+
+Jetzt stellen wir die Normalform auf. Ich habe dir hier zur Erinnerung noch einmal die Formel aufgeschrieben.
+
+Und hier sind die Ebenen in der Normalform.
+
+Wir haben gerade herausgefunden, dass die Ebenen entweder parallel oder identisch sind. Aus der Animation wissen wir zwar schon, dass sie definitiv parallel sind, wir müssen das aber trotzdem beweisen.
+
+Dazu überprüfen wir, ob ein Punkt der roten Ebene in der lilafarbenen liegt. Wir wissen, dass der Stützvektor von R in R liegt, also können wir prüfen, ob er in L liegt. Dazu habe ich hier einmal L in Koordinatenform aufgeschrieben.
+
+Durch Einsetzen und Auflösen sehen wir, dass [0, 0, 0] nicht in L liegt. Die Ebenen teilen also keinen Punkt und sind deshalb nicht identisch.
+
+Da wir jetzt wissen, dass die Ebenen parallel sein müssen, können wir damit anfangen, die Hilfsgerade aufzustellen.
+
+Sie geht in Richtung des Normalvektors, damit sie beide Ebenen senkrecht schneidet und damit den kürzesten Abstand zwischen den beiden beschreibt. Außerdem geht sie von [0, 0, 0] aus, da dadurch R und unsere Gerade den Ursprung schneiden.
+
+Der Rest ist eigentlich selbsterklärend, wir setzen g zeilenweise in L ein, also die erste Zeile von g kommt in die x_1-Koordinate von L und so weiter. Wir erhalten als Parameter für w -9/35. Diesen müssen wir nur noch in g einsetzen und können so den Schnittpunkt von g mit L bestimmen.
+
+Jetzt fehlt nur noch, die Differenz aus [0, 0, 0] und unserem Schnittpunktvektor zu bilden und dann die Länge dieses neuen Vektors zu bestimmen. Das ist der Abstand der beiden Ebenen. Gar nicht so schwer, oder? Es sind einfach viele Schritte, die man im Kopf behalten muss.
+
+So, jetzt geht es an die Ebenen, die sich in einer Schnittgerade schneiden. Da Ebenen unendlich groß sind, werden sie sich immer irgendwo schneiden, wenn sie nicht parallel sind und können deshalb nicht windschief sein.
+
+Das Prinzip ist relativ einfach: Wir nehmen zwei Ebenen in Koordinatenform und betrachten die beiden Ebenengleichungen als lineares Gleichungssystem. Jetzt sehen wir, dass es drei Variablen aber nur zwei Zeilen gibt. Die Ebenen schneiden sich in einer unendlich großen Menge an Punkten, eben eine Gerade.
+
+Wir können jetzt das Gleichungssystem auflösen und erhalten Werte für x und y. Da wir für z t angenommen haben, ist sein Wert im Richtungsvektor 1.

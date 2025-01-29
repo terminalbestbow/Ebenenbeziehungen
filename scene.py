@@ -86,9 +86,12 @@ class ParalleleEbenen(Scene):
         self.play(ApplyMethod(i2.move_to, [0,3.5,0]), Unwrite(i1), runtime=1)
         L2 = Tex(r"$\mathrm{L \: in \: Koordinatenform: L:} \: 5x_1 - x_2 - 3x_3 = -9$")
         self.play(Write(L2), runtime=3)
-        L3 = Tex(r"$\begin{pmatrix} 0 \\ 0 \\ 3 \end{pmatrix} \: \mathrm{in \: L \: einsetzen:} 5 \cdot (0) - (0) -3 \cdot (0) = 0 \neq -9")
+        self.play(ApplyMethod(L2.move_to, [0,2.5,0]))
+        L3 = Tex(r"$\begin{pmatrix} 0 \\ 0 \\ 3 \end{pmatrix} \: \mathrm{in \: L \: einsetzen:} 5 \cdot (0) - (0) -3 \cdot (0) = 0 \neq -9$")
         self.play(Write(L3), runtime=3)
         L4 = Text("Der Stützvektor von R liegt nicht in L!")
+        self.play(ApplyMethod(L3.move_to, [0,1.5,0]))
+        self.play(Write(L4), runtime=3)
         #Würden sie einen Punkt teilen und der Normalvektor wäre kollinear, würden sie alle Punkte teilen und deshalb identisch sein 
         leftover = VGroup()
         for obj in self.mobjects:
